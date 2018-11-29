@@ -6,8 +6,26 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var questionsRouter = require('./routes/questions');
+var answersRouter = require('./routes/answers');
+var groupsRouter = require('./routes/groups');
+var cors = require('cors');
 
 var app = express();
+
+app.use(cors({
+  origin:[
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'http://localhost:8080',
+      'http://localhost:8000',
+      'http://localhost:8888',
+      'http://localhost:80',
+  ],
+  methods:["GET","POST","PUT", "DELETE"], // 허용 메소드
+  credentials: true // enable set cookie
+}));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -20,7 +38,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/questions', questionsRouter);
+app.use('/api/answers', answersRouter);
+app.use('/api/communities', groupsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

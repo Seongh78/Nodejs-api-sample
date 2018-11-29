@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "UI/UX Core 부산",
+        "isOpen": true,
+        "personnel": 150,
+        "administrator": "박호날두"
+    },
+    {
+        "id": 2,
+        "name": "서비스개발팀",
+        "isOpen": true,
+        "personnel": 250,
+        "administrator": "정호날두"
+    },
+    {
+        "id": 3,
+        "name": "모바일개발팀",
+        "isOpen": false,
+        "personnel": 350,
+        "administrator": "최호날두"
+    },
+    {
+        "id": 4,
+        "name": "물류개발팀",
+        "isOpen": true,
+        "personnel": 450,
+        "administrator": "강호날두"
+    },
+    {
+        "id": 5,
+        "name": "UI/UX Core 강촌",
+        "isOpen": false,
+        "personnel": 550,
+        "administrator": "이호날두"
+    }
+]
