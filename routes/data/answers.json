@@ -1,0 +1,33 @@
+[
+    {
+        "answer_idx": 1,
+        "answer_text": "문서제목을 어떻게 작성해야 할까요?",
+        "answer_hashtag": [],
+        "answer_likeCount": 125,
+        "answer_commentCount": 125,
+        "user_idx": 12,
+        "user_name": "박길동",
+        "question_idx": 1
+   },
+   {
+        "answer_idx": 2,
+        "answer_text": "문서제목을 어떻게 작성해야 할까요2222?",
+        "answer_hashtag": [],
+        "answer_likeCount": 25,
+        "answer_commentCount": 25,
+        "user_idx": 13,
+        "user_name": "정길동",
+        "question_idx": 2
+   },
+   {
+        "answer_idx": 3,
+        "answer_text": "문서제목을 어떻게 작성해야 할까요333333333?",
+        "answer_hashtag": [],
+        "answer_likeCount": 15,
+        "answer_commentCount": 15,
+        "user_idx": 13,
+        "user_name": "이길동",
+        "question_idx": 1
+   }
+
+]
